@@ -1,0 +1,110 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:\Users\Joanny\Desktop\tela_busca.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Tela_busca(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(640, 480)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.busca = QtWidgets.QLabel(self.centralwidget)
+        self.busca.setGeometry(QtCore.QRect(250, 30, 201, 21))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Sans Unicode")
+        font.setPointSize(18)
+        self.busca.setFont(font)
+        self.busca.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.busca.setObjectName("busca")
+        self.label_cpf2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_cpf2.setGeometry(QtCore.QRect(30, 110, 151, 21))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Sans Unicode")
+        font.setPointSize(8)
+        self.label_cpf2.setFont(font)
+        self.label_cpf2.setObjectName("label_cpf2")
+        self.line_result_nome = QtWidgets.QLineEdit(self.centralwidget)
+        self.line_result_nome.setGeometry(QtCore.QRect(360, 200, 241, 20))
+        self.line_result_nome.setObjectName("line_result_nome")
+        self.button_buscar = QtWidgets.QPushButton(self.centralwidget)
+        self.button_buscar.setGeometry(QtCore.QRect(200, 140, 51, 21))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Sans Unicode")
+        font.setPointSize(8)
+        self.button_buscar.setFont(font)
+        self.button_buscar.setObjectName("button_buscar")
+        self.label_nascimento2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_nascimento2.setGeometry(QtCore.QRect(270, 280, 71, 20))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Sans Unicode")
+        font.setPointSize(8)
+        self.label_nascimento2.setFont(font)
+        self.label_nascimento2.setObjectName("label_nascimento2")
+        self.label_nome2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_nome2.setGeometry(QtCore.QRect(300, 200, 41, 20))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Sans Unicode")
+        font.setPointSize(8)
+        self.label_nome2.setFont(font)
+        self.label_nome2.setObjectName("label_nome2")
+        self.line_cpf_busca = QtWidgets.QLineEdit(self.centralwidget)
+        self.line_cpf_busca.setGeometry(QtCore.QRect(120, 110, 201, 21))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.line_cpf_busca.sizePolicy().hasHeightForWidth())
+        self.line_cpf_busca.setSizePolicy(sizePolicy)
+        self.line_cpf_busca.setSizeIncrement(QtCore.QSize(0, 0))
+        self.line_cpf_busca.setBaseSize(QtCore.QSize(0, 0))
+        self.line_cpf_busca.setObjectName("line_cpf_busca")
+        self.label_endereco2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_endereco2.setGeometry(QtCore.QRect(280, 240, 61, 20))
+        font = QtGui.QFont()
+        font.setFamily("Lucida Sans Unicode")
+        font.setPointSize(8)
+        self.label_endereco2.setFont(font)
+        self.label_endereco2.setObjectName("label_endereco2")
+        self.line_result_nome_2 = QtWidgets.QLineEdit(self.centralwidget)
+        self.line_result_nome_2.setGeometry(QtCore.QRect(360, 240, 241, 20))
+        self.line_result_nome_2.setObjectName("line_result_nome_2")
+        self.line_result_nome_3 = QtWidgets.QLineEdit(self.centralwidget)
+        self.line_result_nome_3.setGeometry(QtCore.QRect(360, 280, 241, 20))
+        self.line_result_nome_3.setObjectName("line_result_nome_3")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 640, 21))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.busca.setText(_translate("MainWindow", "Buscar Cliente"))
+        self.label_cpf2.setText(_translate("MainWindow", "Informe o CPF:"))
+        self.button_buscar.setText(_translate("MainWindow", "Buscar"))
+        self.label_nascimento2.setText(_translate("MainWindow", "Nascimento:"))
+        self.label_nome2.setText(_translate("MainWindow", "Nome:"))
+        self.label_endereco2.setText(_translate("MainWindow", "Endereço:"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Tela_busca()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+
